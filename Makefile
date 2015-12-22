@@ -17,8 +17,7 @@ CPPFLAGS=-D_GNU_SOURCE \
   -D__STDC_LIMIT_MACROS \
   -DVERSION=\"1.0.0.0\"
 INCPATH=-I. \
-  -I./include \
-  -I../include/
+  -I./include
 DEP_INCPATH=
 
 #============ CCP vars ============
@@ -31,7 +30,7 @@ CCP_FLAGS=
 
 
 #COMAKE UUID
-COMAKE_MD5=ded5ee3145335824ad99a5c1517249f3  COMAKE
+COMAKE_MD5=dbb66f1c7324637baee4385fef7d8e71  COMAKE
 
 
 .PHONY:all
@@ -101,7 +100,8 @@ base_base.o:base.c \
 	$(CC) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CFLAGS)  -o base_base.o base.c
 
 base_dict.o:dict.c \
-  dict.h
+  dict.h \
+  apue.h
 	@echo "[[1;32;40mCOMAKE:BUILD[0m][Target:'[1;32;40mbase_dict.o[0m']"
 	$(CC) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CFLAGS)  -o base_dict.o dict.c
 
