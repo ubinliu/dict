@@ -4,8 +4,8 @@
  
  *       Filename:  apue.h
  *    Description:  
- *         Author:  liuyoubin@baidu.com
- *        Company:  Baidu.com, Inc
+ *         Author:  liuyoubin@ubinliu.com
+ *        Company:  ubinliu.com, Inc
  *        Created:  2015-05-25 10:34:23
  
  * ============================================================
